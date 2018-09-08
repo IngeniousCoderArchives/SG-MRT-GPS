@@ -23,7 +23,8 @@ data = {
                  "5":["Bedok",[]]
                  "6":["Kembangan",[]]
                  "7":["Eunos",[]]
-                 "8":["Paya Lebar"
+                 "8":["Paya Lebar",[3]]
+                 
                 }
     }
         
