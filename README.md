@@ -28,6 +28,12 @@ https://discord.gg/cCBTHWE OR Submit a Issue
 
 - Double Interchanges 
 
+- Double Interchanges fastest legit route
+
+- Triple Interchanges (ex. Nibong to Airport)
+
+- Legit fastest method (ex. Jurong East to Marina Bay, fastest way would be not direct.)
+
 - Time estimator
 
 - Station count
