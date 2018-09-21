@@ -28,7 +28,7 @@ https://discord.gg/cCBTHWE OR Submit a Issue
 
 - Double Interchanges 
 
-- Double Interchanges fastest legit route
+- Double Interchanges fastest legit route (ex. second location to alight at (ex2. CCL, to Kovan, alight at sgoon or dhoby ghaut or harbourfront faster?))
 
 - Triple Interchanges (ex. Nibong to Airport)
 

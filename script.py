@@ -16,7 +16,8 @@ LINE NO              LINE
    12                PUNGGOL LRT EAST
 """
 
-
+import os
+os.system("cls")
 # Display name of station in data
 # When checking with input call .upper
 data = {
@@ -259,6 +260,7 @@ LINE NO              LINE
 #START OF CODE |
 #---------------
 import time
+import random
 def get_line(number):
     if number == 1:
         return "East West Line"
@@ -448,7 +450,44 @@ if not alrdy_reached:
 
 if not alrdy_reached:
     #Double Interchange now.
-    pass
+    # First : Find a train line that both lines do meet
+    data_1 = []
+    for key in sorted(data[start_station_info[0]].keys())[::-1]:
+        value = data[start_station_info[0]][key]
+        interchanges_stn = value[1]
+        for key in interchanges_stn:
+            data_1.append(key)
+    data_2 = []
+    for key in sorted(data[end_station_info[0]].keys())[::-1]:
+        value = data[end_station_info[0]][key]
+        interchanges_stn = value[1]
+        for key in interchanges_stn:
+            data_2.append(key)
+    # Find the common train line
+    common = set(data_1) & set(data_2)
+    # common is a set of lines that the user may change from
+    # now we are gonna just need one, talk about proficiency later.
+    # send a pull req if u can help for now we random.
+    change_at = random.sample(common,1)[0]
+    print(f"Change : {change_at}")
+    # Second : Find out the station names to change at
+    change_to = get_line(change_at)
+    for key,value in data.items():
+        if key == change_at: #The line to change at
+            for key2,value2 in value.items():
+                # key2 = station number, value2 = ["Stationname",[interchanges]]
+                stn_interchanges = value2[1]
+                #reminder : start_station_lines and end_station_lines are lists of lines start/end station have
+                for key in start_station_lines:
+                    if key in stn_interchanges:
+                        change_1_name = value2[0]
+                for key in end_station_lines:
+                    if key in stn_interchanges:
+                        change_2_name = value2[0]
+                        line_to = get_line(key)
+    # Third : Print Result
+    print(f" Change to the {change_to} at {change_1_name}, and travel to {change_2_name} where you transfer to the {line_to}. You will then reach your destination.")
+    #variables : change_to>, change_1_name>, change_2_name>, line_to
 
 
 
@@ -461,7 +500,7 @@ if not alrdy_reached:
 
 
 print("---------------------------------------------")
-print("Thank you for using the SG MRT GPS by XtremeCoder.")
+print("Thank you for using the SG MRT GPS by IngeniousCoder.")
 input("Press Enter to exit.")
       
 
