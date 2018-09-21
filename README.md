@@ -1,4 +1,4 @@
-Repository is **NOT READY**
+
 
 # Disclaimer
 This GPS might not be 100% accurate due to limitations. While we work on improving it, please bear with us :
@@ -25,6 +25,8 @@ Like the tool? Feel free to donate to me then! https://patreon.com/eltontay11
 https://discord.gg/cCBTHWE OR Submit a Issue
 
 # Todo
+
+- Double Interchanges 
 
 - Time estimator
 
