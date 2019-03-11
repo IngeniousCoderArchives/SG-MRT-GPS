@@ -1,4 +1,11 @@
+Another Application by IngeniousApplications
+![IA Logo](http://ingeniousapps.tk/cdn/IA_Logo.png)
 
+[Discord](http://ingeniousapps.tk/discord)
+
+[Website](http://ingeniousapps.tk)
+
+[Donate to us](https://patreon.com/eltontay11)
 
 # Disclaimer
 This GPS might not be 100% accurate due to limitations. While we work on improving it, please bear with us :
@@ -7,8 +14,6 @@ EXAMPLE : Fastest way from Dover to Bishan would be Change at Buona Vista. Howev
 
 # SG MRT GPS
 
-## Usage
-
 This lightweight application literally depends on only one thing:
 ```
 A Python Intepreter
@@ -16,13 +21,14 @@ A Python Intepreter
 
 Run ```run.bat``` to start the app. Follow the instructions.
 
-# Donate
+## Author
 
-Like the tool? Feel free to donate to me then! https://patreon.com/eltontay11
+- XtremeCoder
 
-# Support
 
-Open a ticket here, or email eltontay11@gmail.com . 
+### Bug Reporting and Feature Requesting
+Use the Issues tab under this repository to report bugs and suggest features.
+
 
 # Todo
 
